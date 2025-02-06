@@ -1,0 +1,157 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Me Section */
+#about-me {
+    padding: 2em;
+    text-align: center;
+    background-color: #fff;
+    margin: 1em auto;
+}
+
+#about-me {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Responsive image */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+
+/* Projects Section */
+#projects {
+    padding: 2em;
+    background-color: #e2e2e2;
+}
+
+#projects article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects figure {
+    margin: 0;
+}
+
+#projects figcaption {
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+/* Skills Section */
+#skills {
+    padding: 2em;
+    background-color: #fff;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+#skills ul li::before {
+    content: '✓';
+    margin-right: 0.5em;
+    color: #4CAF50;
+}
+
+/* Contact Form Section */
+#contact {
+    padding: 2em;
+    background-color: #e2e2e2;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contact form button {
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* Hide navigation links */
+    }
+
+    header nav ul.active {
+        display: block; /* Show navigation links when active */
+    }
+
+    #projects article {
+        flex-direction: column;
+    }
+}
